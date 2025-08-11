@@ -55,6 +55,8 @@ if submitted: # When the form is submitted
 
 # Footer
 st.write("---")
-st.caption("📌 Disclaimer: This is an estimate based on historical data and may not reflect actual market prices.")
+st.caption("✅ Price predicted using our Bengaluru housing model.")
+
+
 
 

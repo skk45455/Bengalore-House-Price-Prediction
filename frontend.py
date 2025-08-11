@@ -55,7 +55,9 @@ if submitted: # When the form is submitted
 
 # Footer
 st.write("---")
-st.caption("✅ Price predicted using our Bengaluru housing model.")
+st.caption("✨ Happy house hunting! May you find your dream home in Bengaluru.")
+
+
 
 
 

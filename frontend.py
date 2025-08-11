@@ -17,10 +17,10 @@ with open('RFmodel.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Sidebar for Dataset Preview
-#with st.sidebar:
-    #st.header("📊 Dataset Overview")
-    #if st.checkbox("Show Data Sample"):
-        #st.dataframe(df.head(10))
+with st.sidebar:
+    st.header("📊 Dataset Overview")
+    if st.checkbox("Show Data Sample"):
+        st.dataframe(df.head(10))
 
 # Form for Input
 with st.form("prediction_form", clear_on_submit=False): # Creating a form for user input
@@ -54,6 +54,7 @@ if submitted: # When the form is submitted
     st.info(f"Possible Price Range: ₹ {price*0.9:,.0f} - ₹ {price*1.1:,.0f}") # Displaying a range of possible prices
 
 # Footer
-#st.write("---")
-#st.caption("📌 Disclaimer: This is an estimate based on historical data and may not reflect actual market prices.")
+st.write("---")
+st.caption("📌 Disclaimer: This is an estimate based on historical data and may not reflect actual market prices.")
+
 
